@@ -38,6 +38,10 @@ jobs:
         working-directory: invista
         run: npm run lint
 
+      - name: Unit tests
+        working-directory: invista
+        run: npm run test
+
       - name: Start dev server (background)
         working-directory: invista
         run: npm run dev &
