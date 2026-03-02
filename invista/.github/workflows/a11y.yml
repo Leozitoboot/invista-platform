@@ -1,0 +1,58 @@
+name: Accessibility (WCAG 2.1 AA)
+
+on:
+  pull_request:
+    branches: [main, develop]
+  push:
+    branches: [develop]
+
+jobs:
+  axe-a11y:
+    name: Axe color-contrast — light & dark
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: invista/package-lock.json
+
+      - name: Install dependencies
+        working-directory: invista
+        run: npm ci
+
+      - name: Install Playwright browsers
+        working-directory: invista
+        run: npx playwright install chromium --with-deps
+
+      - name: Build
+        working-directory: invista
+        run: npm run build
+
+      - name: Lint
+        working-directory: invista
+        run: npm run lint
+
+      - name: Start dev server (background)
+        working-directory: invista
+        run: npm run dev &
+
+      - name: Wait for server
+        run: npx wait-on http://localhost:5173 --timeout 30000
+
+      - name: Run Axe a11y tests (light + dark)
+        working-directory: invista
+        run: npx playwright test tests/a11y.spec.ts --reporter=list
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-a11y-results
+          path: invista/test-results/
+          retention-days: 7
