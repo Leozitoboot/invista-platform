@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Base */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f8f7;
+  --bg-card: #ffffff;
+
+  /* Text */
+  --text-primary: #0f1a17;
+  --text-body: #1e3530;
+  --text-muted: #3d6960;
+  --text-subtle: #3d6e68;
+  --text-nav: #0f1a17;
+  --text-nav-muted: #2a4e48;
+
+  /* Borders */
+  --border-subtle: rgba(0, 104, 86, 0.15);
+  --border-nav: rgba(0, 104, 86, 0.1);
+
+  /* Shadow */
+  --shadow-soft: 0 4px 24px rgba(0, 104, 86, 0.08);
+
+  /* Glass — light: alta opacidade para não lavar texto */
+  --glass-bg: rgba(255, 255, 255, 0.88);
+  --glass-border: rgba(0, 104, 86, 0.12);
+
+  /* Header */
+  --header-bg: rgba(255, 255, 255, 0.92);
+  --header-border: rgba(0, 104, 86, 0.12);
+}
+
+.dark,
+[data-theme="dark"] {
+  /* Base */
+  --bg-primary: #0a1512;
+  --bg-secondary: #0f1e1a;
+  --bg-card: #132320;
+
+  /* Text */
+  --text-primary: #e8f5f2;
+  --text-body: #c8e8e3;
+  --text-muted: #8abfb8;
+  --text-subtle: #6ab0a8;
+  --text-nav: #e8f5f2;
+  --text-nav-muted: #b0d9d4;
+
+  /* Borders */
+  --border-subtle: rgba(0, 134, 123, 0.2);
+  --border-nav: rgba(0, 134, 123, 0.15);
+
+  /* Shadow */
+  --shadow-soft: 0 4px 24px rgba(0, 0, 0, 0.4);
+
+  /* Glass — dark: opacidade maior para manter contraste */
+  --glass-bg: rgba(19, 35, 32, 0.92);
+  --glass-border: rgba(0, 134, 123, 0.25);
+
+  /* Header */
+  --header-bg: rgba(10, 21, 18, 0.95);
+  --header-border: rgba(0, 134, 123, 0.2);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
