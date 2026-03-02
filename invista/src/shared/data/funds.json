@@ -1,0 +1,238 @@
+[
+  {
+    "slug": "us-re-private-credit",
+    "nome": "inVista RE US Private Credit",
+    "categoria": "Crédito Imobiliário Privado Americano",
+    "tese": "Geração de renda a partir de empréstimos imobiliários americanos",
+    "teseCompleta": "O inVista US RE Private Credit Fund é um fundo de crédito privado especializado em empréstimos imobiliários nos Estados Unidos. O objetivo do fundo é gerar renda em dólar, oferecendo uma oportunidade de investimento diversificada e capaz de superar os mercados tradicionais de renda fixa. O investidor pode acessar o fundo via Cayman ou, no Brasil, por meio de seu fundo espelho, o inVista US RE Private Credit FIF. O mercado de crédito imobiliário privado nos EUA é pujante e estima-se que USD 3,7 trilhões é o valor dos empréstimos privados para imóveis comerciais nos EUA.",
+    "geo": "Estados Unidos",
+    "moeda": "USD",
+    "ticketMinimo": 100000,
+    "ticketMinimoTexto": "USD 100.000 (Cayman) ou R$ 100.000 (Brasil)",
+    "hardCap": null,
+    "lockup": "2 anos após cada aporte",
+    "statusCaptacao": "aberto",
+    "risco": "Moderado",
+    "perfil": "qualificado",
+    "publicoAlvo": "Investidores Qualificados e Profissionais",
+    "tags": ["crédito privado", "renda em dólar", "EUA", "imobiliário"],
+    "desinvestido": false,
+    "informacoesGerais": [
+      { "label": "Objetivo", "valor": "Geração de renda a partir de empréstimos imobiliários" },
+      { "label": "Subscrição Mínima", "valor": "USD 100.000 (Cayman) ou R$ 100.000 (Brasil)" },
+      { "label": "Público-Alvo", "valor": "Investidores Qualificados e Profissionais" },
+      { "label": "Carência", "valor": "2 anos após cada aporte" },
+      { "label": "Resgates via Cayman", "valor": "Trimestral com aviso mínimo de 30 dias" },
+      { "label": "Resgates via Brasil", "valor": "Mensal com cotização em D+180 dias" },
+      { "label": "Taxa de Gestão", "valor": "2% ao ano" },
+      { "label": "Taxa de Performance", "valor": "20% dos lucros acima do benchmark" },
+      { "label": "Benchmark", "valor": "Dólar + 6,0% ao ano, com marca d'água" },
+      { "label": "Formas de Acesso", "valor": "Fundo em Cayman ou fundo espelho (FIF) no Brasil" },
+      { "label": "Gestor", "valor": "inVista Real Estate" },
+      { "label": "Administrador", "valor": "Apex Global (Cayman) e Apex (Brasil)" }
+    ],
+    "documentosPublicos": [
+      { "nome": "Regulamento do Fundo", "tipo": "regulamento", "url": "#" },
+      { "nome": "Lâmina de Informações Essenciais", "tipo": "lamina", "url": "#" },
+      { "nome": "Relatório Mensal", "tipo": "relatorio", "url": "#" }
+    ],
+    "videos": [
+      { "titulo": "Apresentação inVista US RE Private Credit", "url": "#" }
+    ],
+    "documentosRestritos": [
+      { "nome": "Memorando de Oferta", "categoria": "legal", "url": "#" },
+      { "nome": "Relatório de Due Diligence", "categoria": "financial", "url": "#" },
+      { "nome": "Pipeline de Ativos Q1 2025", "categoria": "operational", "url": "#" }
+    ],
+    "faq": [
+      { "q": "Como posso acessar o fundo no Brasil?", "a": "Via fundo espelho (FIF) com subscrição mínima de R$ 100.000, com liquidez mensal e cotização em D+180 dias corridos." },
+      { "q": "Qual é a moeda de referência?", "a": "O fundo é denominado em dólar americano (USD). O fundo espelho no Brasil tem exposição cambial ao dólar." },
+      { "q": "O fundo tem garantia?", "a": "Não. Fundos de investimento não contam com garantia do FGC ou de qualquer mecanismo de seguro." },
+      { "q": "Qual o perfil de investidor necessário?", "a": "Investidores Qualificados (patrimônio financeiro superior a R$ 1 milhão) ou Profissionais (R$ 10 milhões)." }
+    ]
+  },
+  {
+    "slug": "ibbp11",
+    "nome": "inVista Brazilian Business Park FII (IBBP11)",
+    "categoria": "FII de Galpões Industriais",
+    "tese": "Geração de renda com projeção de ganho de capital",
+    "teseCompleta": "O inVista Brazilian Business Park FII é um fundo imobiliário que tem por objetivo obter renda e ganho de capital mediante a aquisição de galpões industriais e logísticos para posterior locação. O fundo investe no BBP, empresa que há mais de 30 anos desenvolve, incorpora e constrói cidades industriais, garantindo a seus inquilinos acesso diferenciado a infraestrutura de energia, telecomunicações, gestão ambiental e outros serviços. O BBP (Brazilian Business Park) é o maior complexo industrial da América Latina, com localização privilegiada ao longo das principais estradas de São Paulo, atingindo 60% do PIB Nacional em um raio de 500 km.",
+    "geo": "Brasil",
+    "moeda": "BRL",
+    "ticketMinimo": 1000,
+    "ticketMinimoTexto": "R$ 1.000",
+    "hardCap": null,
+    "lockup": "Sem carência (FII listado)",
+    "statusCaptacao": "aberto",
+    "risco": "Moderado",
+    "perfil": "profissional",
+    "publicoAlvo": "Investidor Profissional",
+    "tags": ["galpões", "logística", "FII", "renda", "Brasil"],
+    "desinvestido": false,
+    "informacoesGerais": [
+      { "label": "Objetivo", "valor": "Geração de renda com projeção de ganho de capital" },
+      { "label": "Foco Geográfico", "valor": "Brasil" },
+      { "label": "Público-Alvo", "valor": "Investidor Profissional" },
+      { "label": "Taxa de Gestão", "valor": "0,9% ao ano" },
+      { "label": "Taxa de Estruturação", "valor": "1,75%" },
+      { "label": "Taxa de Performance", "valor": "N/A" },
+      { "label": "Forma de Acesso", "valor": "Fundo no Brasil (IBBP11)" },
+      { "label": "Gestor", "valor": "inVista Real Estate" },
+      { "label": "Administrador", "valor": "Vortx" }
+    ],
+    "documentosPublicos": [
+      { "nome": "Regulamento IBBP11", "tipo": "regulamento", "url": "#" },
+      { "nome": "Relatório Gerencial (Power BI)", "tipo": "relatorio", "url": "#" },
+      { "nome": "Lâmina de Informações", "tipo": "lamina", "url": "#" }
+    ],
+    "videos": [
+      { "titulo": "Visita ao Brazilian Business Park", "url": "#" }
+    ],
+    "documentosRestritos": [
+      { "nome": "Relatório de Performance Detalhado", "categoria": "financial", "url": "#" },
+      { "nome": "Contratos de Locação", "categoria": "legal", "url": "#" }
+    ],
+    "faq": [
+      { "q": "O IBBP11 é listado em bolsa?", "a": "Sim, o IBBP11 é um FII listado na B3, podendo ser negociado no mercado secundário." },
+      { "q": "Qual é a ABL total do portfólio?", "a": "O portfólio possui 80 mil m² construídos e 39 mil m² em construção, com 163 mil m² de área de platôs para desenvolvimento futuro." },
+      { "q": "Quem são os inquilinos?", "a": "Empresas multinacionais de alto crédito, de países como Estados Unidos, Canadá, Alemanha, Itália e Japão." }
+    ]
+  },
+  {
+    "slug": "triple-net-lease-us",
+    "nome": "inVista Triple Net Lease US",
+    "categoria": "Triple Net (NNN)",
+    "tese": "Geração de renda com projeção de ganho de capital",
+    "teseCompleta": "O inVista Triple Net Lease US é um veículo de investimento imobiliário que foca na aquisição de edifícios corporativos premium localizados nos principais polos de tecnologia dos Estados Unidos. A estratégia utiliza o modelo Triple Net Lease (NNN), onde todas as despesas operacionais — impostos, seguros, manutenção e condomínio — são pagas integralmente pelos inquilinos, proporcionando previsibilidade total dos fluxos de caixa. A inVista seleciona somente ativos 'Mission-Critical' essenciais para gigantes globais como Amazon e Microsoft. O objetivo é entregar renda recorrente de aproximadamente 8% ao ano em dólar com TIR alvo entre 12-17% ao ano.",
+    "geo": "Estados Unidos",
+    "moeda": "USD",
+    "ticketMinimo": 500000,
+    "ticketMinimoTexto": "USD 500.000",
+    "hardCap": null,
+    "lockup": "Sem liquidez de curto prazo (ativo direto)",
+    "statusCaptacao": "aberto",
+    "risco": "Moderado-Alto",
+    "perfil": "profissional",
+    "publicoAlvo": "Investidores Profissionais",
+    "tags": ["NNN", "triple net", "EUA", "renda em dólar", "tech hubs"],
+    "desinvestido": false,
+    "informacoesGerais": [
+      { "label": "Objetivo", "valor": "Renda recorrente ~8% a.a. em USD + TIR alvo 12-17% a.a." },
+      { "label": "Estratégia", "valor": "Triple Net Lease (NNN) — inquilinos pagam todas as despesas operacionais" },
+      { "label": "Tipo de Ativo", "valor": "Edifícios corporativos premium — Mission-Critical" },
+      { "label": "Público-Alvo", "valor": "Investidores Profissionais" },
+      { "label": "Prazo médio dos contratos", "valor": "15 anos" },
+      { "label": "Distribuição", "valor": "Trimestral" },
+      { "label": "Gestor", "valor": "inVista Real Estate" }
+    ],
+    "documentosPublicos": [
+      { "nome": "Apresentação da Estratégia NNN", "tipo": "lamina", "url": "#" },
+      { "nome": "Regulamento do Veículo", "tipo": "regulamento", "url": "#" }
+    ],
+    "videos": [
+      { "titulo": "Estratégia Triple Net Lease — Visão Geral", "url": "#" }
+    ],
+    "documentosRestritos": [
+      { "nome": "Portfólio de Ativos Detalhado", "categoria": "operational", "url": "#" },
+      { "nome": "Avaliações Independentes (Appraisals)", "categoria": "financial", "url": "#" }
+    ],
+    "faq": [
+      { "q": "O que é Triple Net Lease?", "a": "No modelo NNN, o inquilino paga todas as despesas operacionais do imóvel (impostos, seguros, manutenção), garantindo fluxo de caixa previsível e sem surpresas para o investidor." },
+      { "q": "Quais empresas são inquilinas?", "a": "A estratégia foca em empresas com altíssimo rating de crédito, como Amazon e Microsoft, em imóveis 'mission-critical' para suas operações." },
+      { "q": "Como é feita a distribuição de renda?", "a": "Trimestralmente, com meta de ~8% ao ano em dólar, após os fluxos de caixa líquidos do portfólio." }
+    ]
+  },
+  {
+    "slug": "rtc-amazon",
+    "nome": "RTC Amazon",
+    "categoria": "Investimento em Ativo Direto",
+    "tese": "Geração de renda com projeção de ganho de capital",
+    "teseCompleta": "O Amazon Redmond Town Center, localizado em Redmond, Washington, é um edifício de classe A+ com 10.346,4 m² de área bruta locável. A aquisição foi concluída em dezembro de 2024 e o imóvel está 100% locado para a Amazon por meio de contrato Triple Net Lease de longo prazo, com vencimento em novembro de 2031. Construído originalmente como loja Macy's em 2003, o imóvel recebeu mais de USD 33,4 milhões em modernização pelo próprio inquilino em 2020/2021, transformando-se em escritório corporativo de altíssima qualidade técnica.",
+    "geo": "Estados Unidos",
+    "moeda": "USD",
+    "ticketMinimo": 2500000,
+    "ticketMinimoTexto": "USD 2,5 Milhões",
+    "hardCap": null,
+    "lockup": "Até novembro de 2031 (vencimento do contrato)",
+    "statusCaptacao": "fechado",
+    "risco": "Moderado",
+    "perfil": "profissional",
+    "publicoAlvo": "Investidores Profissionais",
+    "tags": ["Amazon", "NNN", "EUA", "ativo direto", "Redmond"],
+    "desinvestido": false,
+    "informacoesGerais": [
+      { "label": "Objetivo", "valor": "Geração de renda com projeção de ganho de capital" },
+      { "label": "Localização", "valor": "Redmond, Washington, EUA" },
+      { "label": "ABL", "valor": "10.346,4 m²" },
+      { "label": "Ocupação", "valor": "100% — Amazon (NNN até nov/2031)" },
+      { "label": "Subscrição Mínima", "valor": "USD 2,5 Milhões" },
+      { "label": "Público-Alvo", "valor": "Investidores Profissionais" },
+      { "label": "Taxa de Gestão", "valor": "1,0% a.a." },
+      { "label": "Taxa de Performance", "valor": "20% acima de 6% a.a. em USD (hurdle)" },
+      { "label": "Taxa de Estruturação", "valor": "1,5%" },
+      { "label": "Gestor", "valor": "inVista Real Estate" },
+      { "label": "Contabilidade", "valor": "Apex Global" },
+      { "label": "Legal Advisor", "valor": "Vinson & Elkins" }
+    ],
+    "documentosPublicos": [
+      { "nome": "Apresentação do Ativo", "tipo": "lamina", "url": "#" },
+      { "nome": "Regulamento do Veículo", "tipo": "regulamento", "url": "#" }
+    ],
+    "videos": [
+      { "titulo": "RTC Amazon — Tour Virtual do Ativo", "url": "#" }
+    ],
+    "documentosRestritos": [
+      { "nome": "Contrato NNN com Amazon", "categoria": "legal", "url": "#" },
+      { "nome": "Appraisal Independente", "categoria": "financial", "url": "#" },
+      { "nome": "Relatório de Due Diligence", "categoria": "financial", "url": "#" }
+    ],
+    "faq": [
+      { "q": "O ativo está captando?", "a": "A captação deste ativo específico está encerrada. Consulte nossa equipe comercial para oportunidades similares na estratégia Triple Net Lease." },
+      { "q": "Qual é o prazo do investimento?", "a": "O contrato de locação com a Amazon vence em novembro de 2031, definindo o horizonte do investimento." },
+      { "q": "Como funciona o retorno?", "a": "Renda recorrente via NNN com potencial de ganho de capital na venda do ativo ao final do ciclo." }
+    ]
+  },
+  {
+    "slug": "shopping-cidade-jardim",
+    "nome": "inVista Shopping Cidade Jardim FII",
+    "categoria": "FII de Shopping",
+    "tese": "Ganho de capital pela valorização de imóveis",
+    "teseCompleta": "O fundo inVista Shopping Cidade Jardim FII detém 20,4% de participação no FOF JHSF Private FII, que, por sua vez, é detentor de 25,3% do FII Shopping Cidade Jardim. Ativo imobiliário de alto padrão, com foco no segmento de shoppings e varejo de luxo. O Shopping Cidade Jardim, um dos empreendimentos mais exclusivos de São Paulo, possui ABL de 47 mil m² e taxa de ocupação superior a 97,5%.",
+    "geo": "Brasil",
+    "moeda": "BRL",
+    "ticketMinimo": 1000,
+    "ticketMinimoTexto": "R$ 1.000",
+    "hardCap": null,
+    "lockup": "N/A",
+    "statusCaptacao": "fechado",
+    "risco": "Moderado",
+    "perfil": "profissional",
+    "publicoAlvo": "Investidores Profissionais",
+    "tags": ["shopping", "luxo", "FII", "Brasil", "ganho de capital"],
+    "desinvestido": true,
+    "informacoesGerais": [
+      { "label": "Objetivo", "valor": "Ganho de Capital pela valorização de imóveis" },
+      { "label": "Foco Geográfico", "valor": "Brasil" },
+      { "label": "Subscrição Mínima", "valor": "R$ 1.000" },
+      { "label": "Público-Alvo", "valor": "Investidores Profissionais" },
+      { "label": "Taxa de Gestão", "valor": "1,55% ao ano (mínimo R$ 20.000)" },
+      { "label": "Taxa de Performance", "valor": "20% acima do IPCA + 6%" },
+      { "label": "Benchmark", "valor": "IPCA + 6%" },
+      { "label": "Forma de Acesso", "valor": "Fundo no Brasil" },
+      { "label": "Gestor", "valor": "inVista Real Estate" },
+      { "label": "Administrador", "valor": "Apex Global" }
+    ],
+    "documentosPublicos": [
+      { "nome": "Regulamento Final", "tipo": "regulamento", "url": "#" },
+      { "nome": "Relatório de Desinvestimento", "tipo": "relatorio", "url": "#" }
+    ],
+    "videos": [],
+    "documentosRestritos": [
+      { "nome": "Relatório Final de Performance", "categoria": "financial", "url": "#" }
+    ],
+    "faq": [
+      { "q": "Este fundo ainda está ativo?", "a": "Não. O inVista Shopping Cidade Jardim FII foi desinvestido em 2025. As informações estão disponíveis para consulta histórica." },
+      { "q": "Posso ainda investir neste fundo?", "a": "Não. Para oportunidades atuais em Real Estate Brasil, consulte o IBBP11." }
+    ]
+  }
+]
