@@ -4,7 +4,7 @@
 
 - Node.js 18+
 - npm 9+
-- Dispositivos na mesma rede Wi-Fi para acesso mobile
+- Dispositivos na mesma rede para acesso mobile
 
 ## Rodar o projeto
 
@@ -13,61 +13,71 @@ npm install
 npm run dev
 ```
 
-O terminal exibirá automaticamente:
+O terminal exibirá automaticamente todas as interfaces disponíveis:
 
 ```
   ➜  Local:   http://localhost:5173/
   ➜  Network: http://192.168.x.x:5173/
 ```
 
-Use a URL **Network** para acessar de qualquer dispositivo na mesma rede (iPad, iPhone, outro computador).
-
-## Identificar o IP local
+## Identificar o IP (todos os cenários)
 
 ```bash
 npm run check:network
 ```
 
-Saída:
+Saída (mostra todas as interfaces ativas):
 ```
 🌐 inVista — Dev Server Network Info
-────────────────────────────────────────
+────────────────────────────────────────────
   Local:    http://localhost:5173
-  Network:  http://192.168.0.194:5173
-────────────────────────────────────────
+  Network:  http://192.168.0.194:5173   [en0]
+  Network:  http://192.168.0.197:5173   [en1]
+────────────────────────────────────────────
 ```
 
-Ou manualmente:
-```bash
-# macOS
-ipconfig getifaddr en0   # Wi-Fi
-ipconfig getifaddr en1   # Ethernet
-```
+Use a URL correspondente à rede do dispositivo.
+
+## Cenário 1 — Mac + dispositivo na mesma rede Wi-Fi
+
+1. `npm run dev`
+2. `npm run check:network`
+3. Abrir a URL `Network [en0]` no iPad/iPhone
+
+## Cenário 2 — Mac + dispositivo via Hotspot do iPhone
+
+1. Ativar Hotspot no iPhone
+2. Conectar o Mac ao Hotspot (Wi-Fi do Mac → rede do iPhone)
+3. Conectar o iPad ao mesmo Hotspot
+4. **Reiniciar o servidor** (troca de rede exige novo bind):
+   ```bash
+   npm run dev
+   ```
+5. `npm run check:network` → a nova interface aparece (tipicamente `bridge100`)
+6. Abrir a URL `Network [bridge100]` no iPad
+
+> **Por que reiniciar?** O Vite faz bind ao IP no momento em que inicia. Se o Mac trocar de rede sem reiniciar, o servidor continua escutando no IP antigo (que deixa de existir).
 
 ## Firewall macOS
 
-O Vite está configurado com `host: true` no `vite.config.ts`. Isso faz o servidor escutar em `0.0.0.0` automaticamente.
+O Vite está configurado com `host: true` no `vite.config.ts`, escutando em `0.0.0.0`.
 
-Se macOS bloquear a conexão com uma janela popup perguntando se Node.js pode aceitar conexões, **clique em "Permitir"**.
+Na primeira execução após instalar o Node.js, o macOS exibe um popup pedindo permissão. **Clique em "Permitir"** — isso é permanente.
 
-Isso acontece **uma única vez** por instalação do Node.js. Após permitir, o acesso em rede funciona permanentemente.
-
-Se a popup não aparecer e o acesso continuar bloqueado, rode **uma vez**:
+Se o popup não aparecer e o acesso em rede continuar bloqueado, rode uma única vez:
 
 ```bash
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --unblockapp $(which node)
 ```
 
-> Nota: Em ambientes Docker ou devcontainer, o firewall do host não afeta o container. No médio prazo, migrar para devcontainer elimina essa dependência completamente.
-
 ## Scripts disponíveis
 
 | Comando | Descrição |
 |---|---|
-| `npm run dev` | Inicia dev server com host aberto (rede local) |
+| `npm run dev` | Dev server com host aberto (rede local) |
 | `npm run build` | Build de produção |
 | `npm run preview` | Preview do build local |
 | `npm run lint` | ESLint |
 | `npm run test` | Unit tests (Vitest) |
 | `npm run test:a11y` | Testes de acessibilidade (Playwright + Axe) |
-| `npm run check:network` | Exibe URL de acesso na rede local |
+| `npm run check:network` | Exibe todas as URLs de rede disponíveis |

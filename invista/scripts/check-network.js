@@ -1,44 +1,42 @@
 #!/usr/bin/env node
 /**
  * check-network.js
- * Detecta o IP local e exibe a URL do dev server pronta para uso.
+ * Detecta todos os IPs locais e exibe URLs prontas para uso.
+ * Funciona em Wi-Fi, Ethernet e Hotspot do iPhone.
  */
-import { createSocket } from 'node:dgram';
 import { networkInterfaces } from 'node:os';
 
 const PORT = 5173;
 
-function getLocalIP() {
-  // Método 1: via socket UDP (mais confiável)
-  return new Promise((resolve) => {
-    const socket = createSocket('udp4');
-    socket.connect(80, '8.8.8.8', () => {
-      const ip = socket.address().address;
-      socket.close();
-      resolve(ip);
-    });
-    socket.on('error', () => {
-      // Fallback: via networkInterfaces
-      const nets = networkInterfaces();
-      for (const name of Object.keys(nets)) {
-        for (const net of nets[name]) {
-          if (net.family === 'IPv4' && !net.internal) {
-            resolve(net.address);
-            return;
-          }
-        }
+function getAllLocalIPs() {
+  const nets = networkInterfaces();
+  const results = [];
+  for (const name of Object.keys(nets)) {
+    for (const net of nets[name]) {
+      if (net.family === 'IPv4' && !net.internal) {
+        results.push({ iface: name, ip: net.address });
       }
-      resolve('127.0.0.1');
-    });
-  });
+    }
+  }
+  return results;
 }
 
-const ip = await getLocalIP();
+const ips = getAllLocalIPs();
 
 console.log('\n🌐 inVista — Dev Server Network Info');
-console.log('─'.repeat(40));
+console.log('─'.repeat(44));
 console.log(`  Local:    http://localhost:${PORT}`);
-console.log(`  Network:  http://${ip}:${PORT}`);
-console.log('─'.repeat(40));
-console.log('  Abra a URL "Network" em qualquer dispositivo');
-console.log('  na mesma rede Wi-Fi para acessar o protótipo.\n');
+
+if (ips.length === 0) {
+  console.log('  Network:  (nenhuma interface de rede ativa)');
+  console.log('\n  ⚠️  Verifique se o Mac está conectado a uma rede Wi-Fi ou Hotspot.');
+} else {
+  for (const { iface, ip } of ips) {
+    console.log(`  Network:  http://${ip}:${PORT}   [${iface}]`);
+  }
+}
+
+console.log('─'.repeat(44));
+console.log('  Use a URL "Network" no dispositivo na mesma rede.');
+console.log('  Se trocou de rede (Wi-Fi → Hotspot), reinicie:');
+console.log('  npm run dev\n');
